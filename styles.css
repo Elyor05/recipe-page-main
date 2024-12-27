@@ -1,0 +1,91 @@
+body {
+    font-size: 16px;
+    font-family: Outfit, sans-serif;
+    background-color: #F3E5D8;
+    color: hsl(30, 10%, 34%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45vw;
+    margin: 150px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+main img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1 {
+    align-self: flex-start;
+    color: #000 !important;
+}
+
+.headings {
+    font-family: Young-Serif, serif;
+    color: hsl(14, 45%, 36%);
+}
+
+#prep-time {
+    background-color: hsl(330, 100%, 98%);
+    width: 95%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#prep-time h3, #prep-time li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+span {
+    font-weight: bold;
+}
+
+li {
+    margin: 15px 0;
+    padding-left: 15px;
+}
+
+#ingredients, #nutrition {
+    width: 100%;
+}
+
+li::marker, td:nth-child(even) {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 20px 40px;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        background-color: #fff;
+    }
+
+    main {
+        width: 80vw;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    main img {
+        border-radius: 0;
+    }
+
+    #prep-time {
+        width: 90%;
+    }
+}
