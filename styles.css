@@ -70,7 +70,7 @@ td {
     padding: 20px 40px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 426px) {
     body {
         background-color: #fff;
     }
