@@ -1,8 +1,22 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Young-Serif';
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
 body {
     font-size: 16px;
-    font-family: Outfit, sans-serif;
+    font-family: 'Outfit', sans-serif;
     background-color: #F3E5D8;
     color: hsl(30, 10%, 34%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 main {
@@ -10,7 +24,6 @@ main {
     flex-direction: column;
     align-items: center;
     width: 45vw;
-    margin: 150px auto;
     background-color: #fff;
     padding: 40px;
     border-radius: 30px;
@@ -27,7 +40,7 @@ h1 {
 }
 
 .headings {
-    font-family: Young-Serif, serif;
+    font-family: 'Young-Serif', serif;
     color: hsl(14, 45%, 36%);
 }
 
