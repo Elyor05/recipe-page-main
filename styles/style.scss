@@ -1,0 +1,81 @@
+@import "fonts", "mixins", "basic";
+
+body {
+  @include adjusted-flex;
+  font-family: 'Outfit', sans-serif;
+  background-color: #F3E5D8;
+  color: hsl(30, 10%, 34%);
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 30px;
+
+  img, #ingredients, #nutrition {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+h1 {
+  align-self: flex-start;
+  color: #000 !important;
+}
+
+.headings {
+  font-family: 'Young-Serif', serif;
+  color: hsl(14, 45%, 36%);
+}
+
+#prep-time {
+  background-color: hsl(330, 100%, 98%);
+  width: 95%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#prep-time {
+  h3, li::marker {
+    color: hsl(332, 51%, 32%);
+  }
+}
+
+li::marker, td:nth-child(even) {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 20px 40px;
+}
+
+@media only screen and (max-width: 575.98px) {
+  body {
+    background-color: #fff;
+  }
+
+  main {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 5px;
+  }
+
+  main img {
+    border-radius: 0;
+  }
+
+  #prep-time {
+    width: 90%;
+  }
+}
